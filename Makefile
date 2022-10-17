@@ -6,11 +6,13 @@
 #    By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/16 19:24:41 by ffons-ti          #+#    #+#              #
-#    Updated: 2022/10/02 16:30:00 by ffons-ti         ###   ########.fr        #
+#    Updated: 2022/10/17 11:59:59 by ffons-ti         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME			= libft.a
+
+NAME_BONUS		= libft_bonus.a
 
 SRCS			=	ft_isalnum.c ft_isprint.c ft_memcmp.c  ft_calloc.c \
 					ft_strlcat.c ft_strncmp.c ft_atoi.c ft_isalpha.c \
@@ -40,20 +42,32 @@ CC				= gcc
 RM				= rm -f
 CFLAGS			= -Wall -Wextra -Werror
 
-all:			$(NAME)
-
 $(NAME):		$(OBJS)
-				ar rcs $(NAME) $(OBJS)
-				
-bonus:			$(NAME) $(BONUS_OBJS)
-				ar rcs $(NAME) $(BONUS_OBJS)
+				@ar rcs $(NAME) $(OBJS)
+				@echo "Libft.a created!"
+
+all:			$(NAME) $(NAME_BONUS)
+
+bonus:			$(NAME_BONUS)
+
+$(NAME_BONUS):	$(NAME) $(BONUS_OBJS)
+				@ar rcs $(NAME_BONUS) $(OBJS) $(BONUS_OBJS)
+				@echo "With bonus!"		
 
 clean:
-				$(RM) $(OBJS) $(BONUS_OBJS)
+				@$(RM) $(OBJS) $(BONUS_OBJS)
+				@echo "Clean boys!"
+				
 
 fclean:			clean
-				$(RM) $(NAME)
+				@$(RM) $(NAME) $(NAME_BONUS)
+				@echo "Super clean boys!"
 
 re:				fclean $(NAME)
 
-.PHONY:			all clean fclean re bonus
+rebonus:		fclean $(NAME_BONUS)
+
+norm:			
+				@norminette
+
+.PHONY:			all clean fclean re bonus norm

@@ -1,21 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
+/*   ft_lstfirst.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/29 11:34:04 by ffons-ti          #+#    #+#             */
-/*   Updated: 2022/09/29 13:37:23 by ffons-ti         ###   ########.fr       */
+/*   Created: 2022/11/20 18:30:51 by ffons-ti          #+#    #+#             */
+/*   Updated: 2022/11/20 18:32:15 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../include/libft.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+t_list	*ft_lstfirst(t_list *lst)
 {
-	if (!new)
-		return ;
-	new->next = *lst;
-	*lst = new;
+	if (!lst)
+		return (0);
+	while (lst)
+	{
+		if (lst->before == NULL)
+			return (lst);
+		lst = lst->before;
+	}
+	return (NULL);
 }

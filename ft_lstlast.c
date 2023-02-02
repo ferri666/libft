@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize.c                                       :+:      :+:    :+:   */
+/*   ft_lstlast.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/29 13:35:53 by ffons-ti          #+#    #+#             */
-/*   Updated: 2022/09/29 13:39:35 by ffons-ti         ###   ########.fr       */
+/*   Created: 2022/09/29 13:44:47 by ffons-ti          #+#    #+#             */
+/*   Updated: 2022/11/06 16:59:27 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../include/libft.h"
 
-int	ft_lstsize(t_list *lst)
+t_list	*ft_lstlast(t_list *lst)
 {
-	int	i;
-
-	i = 0;
+	if (!lst)
+		return (0);
 	while (lst)
 	{
+		if (lst->next == NULL)
+			return (lst);
 		lst = lst->next;
-		i++;
 	}
-	return (i);
+	return (NULL);
 }

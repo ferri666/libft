@@ -6,11 +6,11 @@
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 16:49:39 by ffons-ti          #+#    #+#             */
-/*   Updated: 2022/10/01 12:42:35 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2022/11/06 16:59:27 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../include/libft.h"
 
 static int	ft_spaces(const char *str)
 {

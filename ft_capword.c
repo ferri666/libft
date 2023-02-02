@@ -1,34 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
+/*   ft_capword.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/29 14:36:18 by ffons-ti          #+#    #+#             */
-/*   Updated: 2022/09/29 14:47:14 by ffons-ti         ###   ########.fr       */
+/*   Created: 2023/01/27 13:29:07 by ffons-ti          #+#    #+#             */
+/*   Updated: 2023/01/27 13:33:23 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../include/libft.h"
 
-void	ft_lstadd_back(t_list **lst, t_list *new)
+char	*ft_capword(char *s)
 {
-	t_list	*list;
+	size_t	slen;
+	size_t	i;
 
-	list = *lst;
-	if (!*lst)
+	slen = ft_strlen(s);
+	s[0] = ft_toupper(s[0]);
+	i = 1;
+	while (i < slen)
 	{
-		*lst = new;
-		return ;
+		s[i] = ft_tolower(s[i]);
+		i++;
 	}
-	while (list)
-	{
-		if (list->next == NULL)
-		{
-			list->next = new;
-			break ;
-		}
-		list = list->next;
-	}
+	return (s);
 }

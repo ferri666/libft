@@ -6,11 +6,11 @@
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 18:15:11 by ffons-ti          #+#    #+#             */
-/*   Updated: 2022/09/18 14:39:40 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2022/11/06 16:59:27 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../include/libft.h"
 
 int	ft_isdigit(int c)
 {

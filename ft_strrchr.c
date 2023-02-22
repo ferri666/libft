@@ -6,11 +6,11 @@
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 15:59:25 by ffons-ti          #+#    #+#             */
-/*   Updated: 2022/11/06 16:59:27 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2023/02/22 12:15:49 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/libft.h"
+#include "libft.h"
 
 char	*ft_strrchr(char *str, char to_find)
 {

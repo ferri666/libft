@@ -6,11 +6,11 @@
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 18:39:18 by ffons-ti          #+#    #+#             */
-/*   Updated: 2023/01/24 12:49:42 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2023/02/22 12:15:49 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/libft.h"
+#include "libft.h"
 
 char	*ft_free(char *buffer, char *buf)
 {

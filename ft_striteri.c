@@ -6,11 +6,11 @@
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/28 14:19:01 by ffons-ti          #+#    #+#             */
-/*   Updated: 2022/11/06 16:59:27 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2023/02/22 12:15:49 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/libft.h"
+#include "libft.h"
 
 static unsigned int	str_len(char	*s)
 {

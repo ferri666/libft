@@ -6,11 +6,11 @@
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 18:02:44 by ffons-ti          #+#    #+#             */
-/*   Updated: 2022/11/06 16:59:27 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2023/02/22 12:15:49 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/libft.h"
+#include "libft.h"
 
 int	ft_isalpha(int c)
 {

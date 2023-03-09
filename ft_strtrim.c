@@ -6,11 +6,11 @@
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 11:54:05 by ffons-ti          #+#    #+#             */
-/*   Updated: 2022/11/06 16:59:27 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2023/03/08 14:07:44 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/libft.h"
+#include "libft.h"
 
 static int	in_set(char c, char const *set)
 {
@@ -67,13 +67,13 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	len;
 
 	if (!s1 || !set)
-		return (0);
+		return (NULL);
 	len = calc_len(s1, set);
 	if (len > 0)
 	{
 		str = (char *)malloc(len + 1);
 		if (!str)
-			return (0);
+			return (NULL);
 		str = ft_trim(str, s1, find_head(s1, set), len);
 		return (str);
 	}

@@ -6,11 +6,11 @@
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/24 12:09:11 by ffons-ti          #+#    #+#             */
-/*   Updated: 2023/01/31 17:10:23 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2023/03/08 13:41:31 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/libft.h"
+#include "libft.h"
 
 char	*ft_allupper(char *s)
 {

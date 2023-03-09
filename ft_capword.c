@@ -6,11 +6,11 @@
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/27 13:29:07 by ffons-ti          #+#    #+#             */
-/*   Updated: 2023/01/27 13:33:23 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2023/03/08 13:41:31 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/libft.h"
+#include "libft.h"
 
 char	*ft_capword(char *s)
 {

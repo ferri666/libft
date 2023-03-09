@@ -6,11 +6,11 @@
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/20 18:30:51 by ffons-ti          #+#    #+#             */
-/*   Updated: 2022/11/20 18:32:15 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2023/03/08 13:41:31 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/libft.h"
+#include "libft.h"
 
 t_list	*ft_lstfirst(t_list *lst)
 {

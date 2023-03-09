@@ -6,7 +6,7 @@
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 14:51:54 by ffons-ti          #+#    #+#             */
-/*   Updated: 2023/02/22 12:24:05 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2023/03/09 11:43:40 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -128,5 +128,5 @@ char		*ft_capword(char *s);
 
 int			find_chr(char *str, char c);
 
-void		ft_free_matrix(char **matrix);
+void		ft_free_matrix(void **matrix);
 #endif

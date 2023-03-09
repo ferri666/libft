@@ -6,7 +6,7 @@
 #    By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/16 19:24:41 by ffons-ti          #+#    #+#              #
-#    Updated: 2023/02/22 12:23:50 by ffons-ti         ###   ########.fr        #
+#    Updated: 2023/03/09 11:45:12 by ffons-ti         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,7 +32,7 @@ OBJS			= $(SRCS:.c=.o)
 
 CC				= gcc
 RM				= rm -f
-CFLAGS			= -Wall -Wextra -Werror -D BUFFER_SIZE=42
+CFLAGS			= -Wall -Wextra -Werror
 
 $(NAME):		$(OBJS)
 				@ar rcs $(NAME) $(OBJS)
@@ -56,6 +56,6 @@ fclean:			clean
 re:				fclean $(NAME)
 
 norm:			
-				@norminette
+				@norminette | grep -v Norme -B1 || true
 
 .PHONY:			all clean fclean re norm

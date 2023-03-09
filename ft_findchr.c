@@ -1,42 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_findchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/28 14:19:01 by ffons-ti          #+#    #+#             */
-/*   Updated: 2023/03/09 11:41:43 by ffons-ti         ###   ########.fr       */
+/*   Created: 2023/02/22 12:10:49 by ffons-ti          #+#    #+#             */
+/*   Updated: 2023/02/22 12:15:49 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static unsigned int	str_len(char	*s)
+int	find_chr(char *str, char c)
 {
-	unsigned int	i;
+	int	i;
+	int	len;
 
 	i = 0;
-	while (*s)
-	{
+	len = ft_strlen(str);
+	while (i < len && str[i] != c)
 		i++;
-		s++;
-	}
-	return (i);
-}
-
-void	ft_striteri(char *s, void (*f)(unsigned int, char*))
-{
-	unsigned int	len;
-	unsigned int	i;
-
-	if (!s || !f)
-		return ;
-	len = str_len(s);
-	i = 0;
-	while (i < len)
-	{
-		f(i, (s + i));
-		i++;
-	}
+	if (str[i] == c)
+		return (i);
+	return (-1);
 }

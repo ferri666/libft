@@ -6,7 +6,7 @@
 #    By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/16 19:24:41 by ffons-ti          #+#    #+#              #
-#    Updated: 2023/01/27 13:34:35 by ffons-ti         ###   ########.fr        #
+#    Updated: 2023/02/22 12:23:50 by ffons-ti         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,8 @@ SRCS			=	ft_isalnum.c ft_isprint.c ft_memcmp.c  ft_calloc.c \
 					ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
 					ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c \
 					ft_lstiter.c ft_lstmap.c ft_atoi2.c  ft_lstfirst.c \
-					get_next_line.c ft_allupper.c ft_alllower.c ft_capword.c
+					get_next_line.c ft_allupper.c ft_alllower.c ft_capword.c \
+					ft_findchr.c ft_free_matrix.c
 					
 OBJS			= $(SRCS:.c=.o)
 

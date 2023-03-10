@@ -6,7 +6,7 @@
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 14:51:54 by ffons-ti          #+#    #+#             */
-/*   Updated: 2023/03/09 11:43:40 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2023/03/10 11:31:02 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,15 @@
 # include <sys/types.h>
 # include <sys/uio.h>
 # include <limits.h>
+# include <stdarg.h>
+# define BUFFER_SIZE 1
 
 typedef struct s_list
 {
 	int				content;
 	struct s_list	*next;
 	struct s_list	*before;
-}	t_list;
+}	t_dlist;
 
 void		*ft_bzero(void *s, size_t len);
 
@@ -96,25 +98,25 @@ void		ft_putendl_fd(char *s, int fd);
 
 void		ft_putnbr_fd(int n, int fd);
 
-t_list		*ft_lstnew(int content);
+t_dlist		*ft_lstnew(int content);
 
-void		ft_lstadd_front(t_list **lst, t_list *new);
+void		ft_lstadd_front(t_dlist **lst, t_dlist *new);
 
-int			ft_lstsize(t_list *lst);
+int			ft_lstsize(t_dlist *lst);
 
-t_list		*ft_lstlast(t_list *lst);
+t_dlist		*ft_lstlast(t_dlist *lst);
 
-void		ft_lstadd_back(t_list **lst, t_list *new);
+void		ft_lstadd_back(t_dlist **lst, t_dlist *new);
 
-void		ft_lstdelone(t_list *lst, void (*del)(void *));
+void		ft_lstdelone(t_dlist *lst, void (*del)(void *));
 
-void		ft_lstclear(t_list **lst, void (*del)(void *));
+void		ft_lstclear(t_dlist **lst, void (*del)(void *));
 
-void		ft_lstiter(t_list *lst, void (*f)(void *));
+void		ft_lstiter(t_dlist *lst, void (*f)(void *));
 
-t_list		*ft_lstmap(t_list *lst, int (*f)(void *), void (*del)(void *));
+t_dlist		*ft_lstmap(t_dlist *lst, int (*f)(void *), void (*del)(void *));
 
-t_list		*ft_lstfirst(t_list *lst);
+t_dlist		*ft_lstfirst(t_dlist *lst);
 
 char		*get_next_line(int fd);
 
@@ -129,4 +131,23 @@ char		*ft_capword(char *s);
 int			find_chr(char *str, char c);
 
 void		ft_free_matrix(void **matrix);
+
+int			ft_printchar(int c);
+
+int			ft_printf(const char *format, ...);
+
+int			ft_format(va_list arg, int i);
+
+int			ft_printpercent(void);
+
+int			ft_printstr(char *str);
+
+int			ft_printnbr(int nbr);
+
+int			ft_printhex(unsigned int nbr, const char f);
+
+int			ft_printptr(unsigned long long ptr);
+
+int			ft_printunsign(unsigned int nbr);
+
 #endif

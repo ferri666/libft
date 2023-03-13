@@ -6,7 +6,7 @@
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 14:51:54 by ffons-ti          #+#    #+#             */
-/*   Updated: 2023/03/10 11:31:02 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2023/03/13 17:35:28 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ typedef struct s_list
 	struct s_list	*next;
 	struct s_list	*before;
 }	t_dlist;
+
+//// BASIC LIBFT /////
 
 void		*ft_bzero(void *s, size_t len);
 
@@ -68,8 +70,6 @@ int			ft_memcmp(const void *s1, const void *s2, size_t n);
 
 int			ft_atoi(const char *str);
 
-long int	ft_atoi2(const char *str);
-
 char		*ft_strnstr(const char *str, const char *to_find, size_t len);
 
 void		*ft_calloc(size_t count, size_t size);
@@ -98,6 +98,8 @@ void		ft_putendl_fd(char *s, int fd);
 
 void		ft_putnbr_fd(int n, int fd);
 
+///////////////LIST////////////////////
+
 t_dlist		*ft_lstnew(int content);
 
 void		ft_lstadd_front(t_dlist **lst, t_dlist *new);
@@ -118,19 +120,13 @@ t_dlist		*ft_lstmap(t_dlist *lst, int (*f)(void *), void (*del)(void *));
 
 t_dlist		*ft_lstfirst(t_dlist *lst);
 
+////// GNL //////////
+
 char		*get_next_line(int fd);
 
 char		*ft_free(char *buffer, char *buf);
 
-char		*ft_alllower(char *s);
-
-char		*ft_allupper(char *s);
-
-char		*ft_capword(char *s);
-
-int			find_chr(char *str, char c);
-
-void		ft_free_matrix(void **matrix);
+///////  PRINTF //////////
 
 int			ft_printchar(int c);
 
@@ -149,5 +145,20 @@ int			ft_printhex(unsigned int nbr, const char f);
 int			ft_printptr(unsigned long long ptr);
 
 int			ft_printunsign(unsigned int nbr);
+
+/// NEW  ///
+char		*ft_alllower(char *s);
+
+char		*ft_allupper(char *s);
+
+char		*ft_capword(char *s);
+
+int			find_chr(char *str, char c);
+
+void		ft_free_matrix(void **matrix);
+
+int			ft_countchr(char *str, char c);
+
+long int	ft_atoi2(const char *str);
 
 #endif

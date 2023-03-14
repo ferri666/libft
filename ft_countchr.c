@@ -6,9 +6,11 @@
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/13 17:31:26 by ffons-ti          #+#    #+#             */
-/*   Updated: 2023/03/13 17:32:35 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2023/03/14 12:18:12 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_countchr(char *str, char c)
 {
@@ -22,7 +24,7 @@ int	ft_countchr(char *str, char c)
 	while (i < len)
 	{	
 		if (str[i] == c)
-			c++;
+			count++;
 		i++;
 	}
 	return (count);

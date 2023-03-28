@@ -6,7 +6,7 @@
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 14:51:54 by ffons-ti          #+#    #+#             */
-/*   Updated: 2023/03/14 11:50:46 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2023/03/27 17:56:28 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -163,5 +163,7 @@ int			ft_countchr(char *str, char c);
 long int	ft_atoi2(const char *str);
 
 int			ft_nlines(char *file);
+
+int			ft_check_fd(char *str);
 
 #endif

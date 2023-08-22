@@ -6,12 +6,15 @@
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/14 11:38:01 by ffons-ti          #+#    #+#             */
-/*   Updated: 2023/03/14 12:17:27 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2023/03/31 12:29:20 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+It returns the number of lines of a file.
+*/
 int	ft_nlines(char *file)
 {
 	int		lines;

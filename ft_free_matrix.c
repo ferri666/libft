@@ -6,12 +6,15 @@
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 12:23:06 by ffons-ti          #+#    #+#             */
-/*   Updated: 2023/03/14 13:17:17 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2023/03/31 12:26:45 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+Frees a double array.
+*/
 void	ft_free_matrix(void **matrix)
 {
 	int	i;

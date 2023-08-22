@@ -6,7 +6,7 @@
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 18:39:18 by ffons-ti          #+#    #+#             */
-/*   Updated: 2023/03/09 11:41:12 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2023/04/01 18:51:44 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,7 @@ static char	*read_file(int fd, char *res)
 	if (!res)
 		res = ft_calloc(1, 1);
 	buffer = (char *)malloc((BUFFER_SIZE + 1) * sizeof(char));
-	if (!buffer)
+	if (!buffer || !res)
 		return (NULL);
 	byte_read = 1;
 	while (byte_read > 0)

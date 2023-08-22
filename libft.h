@@ -6,7 +6,7 @@
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 14:51:54 by ffons-ti          #+#    #+#             */
-/*   Updated: 2023/03/27 17:56:28 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2023/05/23 17:19:45 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,12 @@
 # include <sys/uio.h>
 # include <limits.h>
 # include <stdarg.h>
-# define BUFFER_SIZE 1
-
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 1
+# endif
+# ifndef OPEN_MAX
+#  define OPEN_MAX 10240
+# endif
 typedef struct s_list
 {
 	int				content;

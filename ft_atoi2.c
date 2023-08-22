@@ -6,16 +6,11 @@
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 16:49:39 by ffons-ti          #+#    #+#             */
-/*   Updated: 2023/03/09 11:41:43 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2023/03/31 12:10:11 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-/* 
-Same as atoi, but with BIIIIIIIIIIIIIIIIG Numbers
-(Try to keep up, mate)
-*/
 
 static int	ft_spaces(const char *str)
 {
@@ -31,6 +26,10 @@ static int	ft_spaces(const char *str)
 	return (sp_nb);
 }
 
+/* 
+Same as atoi, but with BIIIIIIIIIIIIIIIIG Numbers
+(Try to keep up, mate)
+*/
 long int	ft_atoi2(const char *str)
 {
 	int				sign;

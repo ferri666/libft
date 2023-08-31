@@ -1,18 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_is_number.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/12 18:15:18 by ffons-ti          #+#    #+#             */
-/*   Updated: 2023/08/31 13:01:04 by ffons-ti         ###   ########.fr       */
+/*   Created: 2023/08/31 13:00:49 by ffons-ti          #+#    #+#             */
+/*   Updated: 2023/08/31 13:01:15 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int c)
+int	is_number(char *s)
 {
-	return (ft_isalpha(c) || ft_isdigit(c));
+	if (*s == '-' || *s == '+')
+		s++;
+	if (!*s)
+		return (0);
+	while (*s)
+	{
+		if (*s < 48 || *s > 57)
+			return (0);
+		s++;
+	}
+	return (1);
 }

@@ -6,12 +6,12 @@
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/24 12:09:11 by ffons-ti          #+#    #+#             */
-/*   Updated: 2023/03/31 12:08:47 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2023/09/19 12:59:50 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+#include <stdio.h>
 /*
 FUNCTION: ft_alllower
 Given an array of characters, it returns the same
@@ -32,3 +32,13 @@ char	*ft_alllower(char *s)
 	}
 	return (s);
 }
+/*
+int main(int argc, char **argv)
+{
+	if (argc == 2)
+	{
+		printf ("%s\n", ft_allupper(argv[1]));
+		printf ("%s\n", ft_alllower(argv[1]));
+	}
+}
+*/

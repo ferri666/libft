@@ -6,7 +6,7 @@
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 15:14:20 by ffons-ti          #+#    #+#             */
-/*   Updated: 2023/03/09 11:41:43 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2023/09/19 16:48:23 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,15 +33,15 @@ char	*ft_strchr(char *str, char to_find)
 
 int	main(void)
 {
-	printf("%s\n", ft_strchr("Ests",'e'));
-	printf("%s\n", ft_strchr("",'c'));
-	printf("%s\n", ft_strchr("Esto es esto que es esto estoes",'s'));
-	printf("%s\n", ft_strchr("Esto es esto que es esto estoes",'\0'));
+	printf("%s\n", ft_strrchr("Ests",'e'));
+	printf("%s\n", ft_strrchr("",'c'));
+	printf("%s\n", ft_strrchr("Esto es esto que es esto estoes",'s'));
+	printf("%s\n", ft_strrchr("Esto es esto que es esto estoes",'\0'));
 	printf("--------------------------\n");
 	printf("%s\n", strchr("Ests",'e'));
 	printf("%s\n", strchr("",'c'));
 	printf("%s\n", strchr("Esto es esto que es esto estoes",'s'));
-	printf("%s\n", strchr("Esto es esto que es esto estoes",'\0'));
+	printf("%s\n", strrchr("Esto es esto que es esto estoes",'\0'));
 	return (0);
 }
 */

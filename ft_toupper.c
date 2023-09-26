@@ -6,7 +6,7 @@
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 13:04:44 by ffons-ti          #+#    #+#             */
-/*   Updated: 2023/09/19 13:13:00 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2023/09/26 14:51:48 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,8 +52,11 @@ int main(int argc, char **argv)
 	i = 0;
 	if (argc == 2)
 	{
-
-		printf("%zu", ft_strlen(argv[1]));
+		while (i < ft_strlen(argv[1]))
+		{
+			printf("%d\n", argv[1][i]);
+			i++;	
+		}
 	}
 }
 */

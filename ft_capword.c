@@ -6,7 +6,7 @@
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/27 13:29:07 by ffons-ti          #+#    #+#             */
-/*   Updated: 2023/09/26 14:51:31 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2023/09/26 15:36:18 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_capword(char *s)
 
 	slen = ft_strlen(s);
 	i = 1;
-	if (s[0]!= -61)
+	if (s[0] != -61)
 		s[0] = ft_toupper(s[0]);
 	else
 	{

@@ -6,7 +6,7 @@
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/27 13:29:07 by ffons-ti          #+#    #+#             */
-/*   Updated: 2024/04/23 10:38:52 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2024/04/23 10:40:14 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,8 @@ char	*ft_capword(char *s)
 	slen = ft_strlen(s);
 	while ((ft_isspace(s[i]) || s[i] == -61) && i < slen)
 		i++;
-	s[i] = ft_toupper(s[i++]);
+	s[i] = ft_toupper(s[i]);
+	i++;
 	while (i < slen)
 	{
 		s[i] = ft_tolower(s[i]);

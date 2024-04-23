@@ -6,7 +6,7 @@
 /*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 14:51:54 by ffons-ti          #+#    #+#             */
-/*   Updated: 2023/09/26 14:39:32 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2024/04/23 10:37:00 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -171,5 +171,7 @@ long int	ft_atoi2(const char *str);
 int			ft_nlines(char *file);
 
 int			ft_check_fd(char *str);
+
+int			ft_isspace(int c);
 
 #endif

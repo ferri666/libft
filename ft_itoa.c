@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: ffons-ti <ffons-ti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 18:26:35 by ffons-ti          #+#    #+#             */
-/*   Updated: 2023/03/09 11:41:43 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2024/05/14 10:53:25 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,8 @@ static int	absolut(int num)
 
 char	*ft_itoa(int n)
 {
-	char			*res;
-	unsigned int	len;
+	char	*res;
+	int		len;
 
 	len = get_len(n);
 	res = (char *)malloc(len + 1);

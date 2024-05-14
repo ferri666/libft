@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printptr.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: ffons-ti <ffons-ti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 15:13:07 by ffons-ti          #+#    #+#             */
-/*   Updated: 2023/03/09 16:15:22 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2024/05/14 10:53:58 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_ptr_len(uintptr_t num)
+static int	ft_ptr_len(intptr_t num)
 {
 	int	len;
 
@@ -25,7 +25,7 @@ static int	ft_ptr_len(uintptr_t num)
 	return (len);
 }
 
-static void	ft_put_ptr(uintptr_t num)
+static void	ft_put_ptr(intptr_t num)
 {
 	if (num >= 16)
 	{

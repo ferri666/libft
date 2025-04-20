@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: ffons-ti <ffons-ti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/18 15:18:29 by ffons-ti          #+#    #+#             */
-/*   Updated: 2024/03/18 11:58:34 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2025/04/20 16:50:09 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,11 +40,3 @@ char	*ft_strnstr(const char *str, const char *to_find, size_t len)
 	}
 	return (NULL);
 }
-/*
-int	main(void)
-{
-	printf("%s\n", strnstr("Esto es esto que es esto estoesgfdg","estoes", -1));
-	printf("%s\n", ft_strnstr("Esto es esto que es esto estoesgfdg","estoes", -1));
-	return (0);
-}
-*/

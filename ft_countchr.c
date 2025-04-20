@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_countchr.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ffons-ti <ffons-ti@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: ffons-ti <ffons-ti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/13 17:31:26 by ffons-ti          #+#    #+#             */
-/*   Updated: 2023/03/31 12:26:23 by ffons-ti         ###   ########.fr       */
+/*   Updated: 2025/04/20 16:50:37 by ffons-ti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int	ft_countchr(char *str, char c)
 	len = ft_strlen(str);
 	count = 0;
 	while (i < len)
-	{	
+	{
 		if (str[i] == c)
 			count++;
 		i++;
